@@ -9,7 +9,8 @@
     "node": ">=16 || ^14.17"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "repository": {
     "type": "git",
