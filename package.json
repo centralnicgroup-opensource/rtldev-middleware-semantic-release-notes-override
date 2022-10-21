@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-notes-override",
-  "description": "Automated semver compliant package publishing",
+  "description": "Replace default release notes with custom notes",
   "private": true,
   "version": "0.0.0-development",
   "author": "",
@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AsifNawaz-cnic/semantic-release-notes-override.git"
+    "url": "git+https://github.com/centralnicgroup-opensource/semantic-release-notes-override.git"
   },
-  "homepage": "https://github.com/AsifNawaz-cnic/semantic-release-notes-override",
+  "homepage": "https://github.com/centralnicgroup-opensource/semantic-release-notes-override",
   "keywords": [
     "author",
     "automation",
