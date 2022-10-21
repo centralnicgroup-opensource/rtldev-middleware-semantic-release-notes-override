@@ -1,0 +1,37 @@
+{
+  "name": "semantic-release-notes-override",
+  "description": "Automated semver compliant package publishing",
+  "private": true,
+  "version": "0.0.0-development",
+  "author": "",
+  "contributors": [],
+  "engines": {
+    "node": ">=16 || ^14.17"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsifNawaz-cnic/semantic-release-notes-override.git"
+  },
+  "homepage": "https://github.com/AsifNawaz-cnic/semantic-release-notes-override",
+  "keywords": [
+    "author",
+    "automation",
+    "changelog",
+    "module",
+    "package",
+    "publish",
+    "release",
+    "semver",
+    "version"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@semantic-release/error": "^3.0.0",
+    "aggregate-error": "^3.1.0",
+    "debug": "^4.3.4"
+  }
+}
