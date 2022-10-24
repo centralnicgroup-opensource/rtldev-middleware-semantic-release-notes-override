@@ -8,27 +8,15 @@
   "engines": {
     "node": ">=16 || ^14.17"
   },
-  "files": [
-    "index.js",
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/centralnicgroup-opensource/semantic-release-notes-override.git"
   },
   "homepage": "https://github.com/centralnicgroup-opensource/semantic-release-notes-override",
   "keywords": [
-    "author",
-    "automation",
-    "changelog",
-    "module",
-    "package",
-    "publish",
-    "release",
-    "semver",
-    "version"
+    "release notes",
+    "custom release notes"
   ],
-  "license": "MIT",
   "main": "index.js",
   "dependencies": {
     "@semantic-release/error": "^3.0.0",
