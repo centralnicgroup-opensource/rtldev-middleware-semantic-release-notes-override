@@ -1,6 +1,6 @@
-const resolveConfig = require('./lib/resolve-config')
-const getError = require('./lib/get-error')
-const AggregateError = require('aggregate-error')
+import resolveConfig from './lib/resolve-config.js'
+import getError from './lib/get-error.js'
+import AggregateError from 'aggregate-error'
 
 let verified;
 async function verifyConditions(pluginConfig, context) {
@@ -19,10 +19,10 @@ async function verifyConditions(pluginConfig, context) {
     }
 }
 
-async function generateNotes(pluginConfig, context){
+async function generateNotes(pluginConfig, context) {
     const cfg = resolveConfig(context);
     const cleanedNotes = cfg.notes.replace(/\(\[([^[\]]*)\]\([^()]*\)\)/gm, "");
     return cleanedNotes;
 }
 
-module.exports = {verifyConditions, generateNotes}
+export default { verifyConditions, generateNotes }

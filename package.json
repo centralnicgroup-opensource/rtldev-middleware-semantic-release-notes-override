@@ -8,6 +8,7 @@
   "engines": {
     "node": ">=18.3.0"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/centralnicgroup-opensource/semantic-release-notes-override.git"
