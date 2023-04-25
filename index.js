@@ -19,9 +19,32 @@ async function verifyConditions(pluginConfig, context) {
     }
 }
 
+/**
+ * Generates cleaned release notes by removing links and commit ids.
+ * 
+ * @async
+ * @function generateNotes
+ * @param {Object} pluginConfig - Configuration object for the plugin.
+ * @param {Object} context - Context object for the plugin.
+ * @returns {string} cleanedNotes - Cleaned release notes with links and commit ids removed.
+ */
 async function generateNotes(pluginConfig, context) {
+    // Resolve plugin configuration.
     const cfg = resolveConfig(context);
-    const cleanedNotes = cfg.notes.replace(/\(\[([^[\]]*)\]\([^()]*\)\)/gm, "");
+
+    // Get the notes from the configuration object.
+    const notes = cfg.notes;
+
+    // Decode the notes to handle any special characters.
+    let cleanedNotes = decodeURIComponent(notes);
+
+    // Define the regex to match links and commit ids in the notes.
+    const regex = /\(\[([^[\]]*)\]\([^()]*\)\)|\[([^[\]]*)\]\([^()]*\)/ig;
+
+    // Replace the links and commit ids with the text in the square brackets.
+    cleanedNotes = cleanedNotes.replace(regex, "$2");
+
+    // Return the cleaned release notes.
     return cleanedNotes;
 }
 
