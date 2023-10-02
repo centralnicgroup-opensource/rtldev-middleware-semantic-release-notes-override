@@ -6,7 +6,7 @@
   "author": "",
   "contributors": [],
   "engines": {
-    "node": ">=18.3.0"
+    "node": ">=20.6.1"
   },
   "type": "module",
   "repository": {
@@ -20,8 +20,8 @@
   ],
   "main": "index.js",
   "dependencies": {
-    "@semantic-release/error": "^3.0.0",
-    "aggregate-error": "^4.0.1",
-    "debug": "^4.3.4"
+    "@semantic-release/error": "^4.0.0",
+    "aggregate-error": "^5.0.0",
+    "debug": "^4.0.0"
   }
 }
