@@ -1,0 +1,11 @@
+name: Dependabot auto-merge & tests
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  tests:
+    uses: centralnicgroup-opensource/rtldev-middleware-shareable-workflows/.github/workflows/semantic-release-notes-override-test.yml@main
+    secrets: inherit
